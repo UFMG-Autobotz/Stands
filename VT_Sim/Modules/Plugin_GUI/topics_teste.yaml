@@ -1,0 +1,7 @@
+Random:
+  nome: "Teste"
+  topicos: [["chatter"], ["blablabla"], ["iabadabadoo"]]
+  sliders: ['Iaba', 'Daba', 'Doo']
+  range: [[0,2], [0,100], [0,360]]
+  ticks: 23
+  tipo: ["float", "int", "float"]

@@ -1,0 +1,7 @@
+Esquerda:
+  nome: "Esquerda"
+  topicos: [["/VT/joint_vel_VT__VT_1__chassi_link_JOINT_BL", "/VT/joint_vel_VT__VT_1__chassi_link_JOINT_BR"], ["/VT/joint_vel_VT__VT_1__chassi_link_JOINT_BR", "/VT/joint_vel_VT__VT_1__chassi_link_JOINT_FR"]]
+  sliders: ['V Esquerda', 'V Direita']
+  range: [[0,100], [0,100]]
+  ticks: 20
+  tipo: ["float", "float"]
