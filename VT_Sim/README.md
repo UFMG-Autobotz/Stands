@@ -3,12 +3,12 @@
 * PyQT4
 
 # Instruçōes para rodar
-1. Inicializar ROS:
+## 1. Inicializar ROS:
 ```
 roscore
 ```
 
-2. Abrir simulação:
+## 2. Abrir simulação:
 Na pasta Bash:
 ```
 // Terreno plano
@@ -20,16 +20,16 @@ ou
 bash run_field.sh
 ```
 
-3. Abrir interface grafica:
+## 3. Abrir interface grafica:
 Em Modules/Plugin_GUI
 ```
 python main.py
 ```
 
-4. Preparar interface grafica:
+## 4. Preparar interface grafica:
 No menu superior, clicar em Controller e em Nova Aba
 
-5. Enviar comandos:
+## 5. Enviar comandos:
 Ajustar os valores de velocidade das rodas esquerdas e direitas e clicar em Publish para publicar.
 Observaçoes:
 * Quando Once esta marcado o valor selecionado é enviado uma vez, quando Stream está marcado o valor é reenviado a cada modificação.
