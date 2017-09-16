@@ -1,0 +1,8 @@
+Plugins/VT_sim/build
+Modules/Plugin_GUI/DockTitleBar.pyc
+Modules/Plugin_GUI/general_utils.pyc
+Modules/Plugin_GUI/Graphs.pyc
+Modules/Plugin_GUI/Image.pyc
+Modules/Plugin_GUI/Main_Window.pyc
+Modules/Plugin_GUI/qt_utils.pyc
+Modules/Plugin_GUI/Slider.pyc
