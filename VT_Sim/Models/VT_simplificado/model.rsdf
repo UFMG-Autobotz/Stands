@@ -4,9 +4,9 @@
 
   # CORES
   # pneu
-  pneu_r = 1
-  pneu_g = 1
-  pneu_b = 1
+  pneu_r = 0.2
+  pneu_g = 0.2
+  pneu_b = 0.2
 
   # chassi
   chassi_r = 0.95
