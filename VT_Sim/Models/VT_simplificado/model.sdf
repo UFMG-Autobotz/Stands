@@ -145,7 +145,7 @@
             <name>Gazebo/Grey</name>
           </script>
           <ambient>0.3 0.3 0.3 1</ambient>
-          <diffuse>0 0 0 1</diffuse>
+          <diffuse>1 1 1 1</diffuse>
           <specular>0.01 0.01 0.01 1</specular>
           <emissive>0 0 0 1</emissive>
           <shader type='vertex'>
@@ -168,8 +168,8 @@
         <surface>
           <friction>
             <ode>
-              <mu>1000</mu>
-              <mu2>1000</mu2>
+              <mu>50</mu>
+              <mu2>50</mu2>
               <fdir1>1 0 0</fdir1>
               <slip1>0</slip1>
               <slip2>0</slip2>
@@ -243,7 +243,7 @@
             <name>Gazebo/Grey</name>
           </script>
           <ambient>0.3 0.3 0.3 1</ambient>
-          <diffuse>0 0 0 1</diffuse>
+          <diffuse>1 1 1 1</diffuse>
           <specular>0.01 0.01 0.01 1</specular>
           <emissive>0 0 0 1</emissive>
           <shader type='vertex'>
@@ -266,8 +266,8 @@
         <surface>
           <friction>
             <ode>
-              <mu>1000</mu>
-              <mu2>1000</mu2>
+              <mu>50</mu>
+              <mu2>50</mu2>
               <fdir1>1 0 0</fdir1>
               <slip1>0</slip1>
               <slip2>0</slip2>
@@ -341,7 +341,7 @@
             <name>Gazebo/Grey</name>
           </script>
           <ambient>0.3 0.3 0.3 1</ambient>
-          <diffuse>0 0 0 1</diffuse>
+          <diffuse>1 1 1 1</diffuse>
           <specular>0.01 0.01 0.01 1</specular>
           <emissive>0 0 0 1</emissive>
           <shader type='vertex'>
@@ -364,8 +364,8 @@
         <surface>
           <friction>
             <ode>
-              <mu>1000</mu>
-              <mu2>1000</mu2>
+              <mu>50</mu>
+              <mu2>50</mu2>
               <fdir1>1 0 0</fdir1>
               <slip1>0</slip1>
               <slip2>0</slip2>
@@ -439,7 +439,7 @@
             <name>Gazebo/Grey</name>
           </script>
           <ambient>0.3 0.3 0.3 1</ambient>
-          <diffuse>0 0 0 1</diffuse>
+          <diffuse>1 1 1 1</diffuse>
           <specular>0.01 0.01 0.01 1</specular>
           <emissive>0 0 0 1</emissive>
           <shader type='vertex'>
@@ -462,8 +462,8 @@
         <surface>
           <friction>
             <ode>
-              <mu>1000</mu>
-              <mu2>1000</mu2>
+              <mu>50</mu>
+              <mu2>50</mu2>
               <fdir1>1 0 0</fdir1>
               <slip1>0</slip1>
               <slip2>0</slip2>
@@ -544,7 +544,7 @@
       <child>roda_BR_link</child>
       <pose frame=''>0 0 0 0 -0 0</pose>
       <axis>
-        <xyz>0 0 -1</xyz>
+        <xyz>0 0 1</xyz>
         <use_parent_model_frame>0</use_parent_model_frame>
         <limit>
           <lower>-1.79769e+308</lower>
@@ -610,7 +610,7 @@
       <child>roda_FR_link</child>
       <pose frame=''>0 0 0 0 -0 0</pose>
       <axis>
-        <xyz>0 0 -1</xyz>
+        <xyz>0 0 1</xyz>
         <use_parent_model_frame>0</use_parent_model_frame>
         <limit>
           <lower>-1.79769e+308</lower>

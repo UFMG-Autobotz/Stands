@@ -39,6 +39,11 @@ namespace gazebo{
 		public: virtual void Load(physics::ModelPtr _model, sdf::ElementPtr _sdf){
 			// Safety check
 
+      this->kp = _sdf->Get<double>("pid_kp");
+
+      this->updateConnection = event::Events::ConnectWorldUpdateBegin(
+          boost::bind(&VT_simPlugin::OnUpdate, this, _1));
+
 			this->n_joints = _model->GetJointCount();
 			std::cerr << "\n";
 			std::cerr << this->n_joints;
@@ -56,11 +61,14 @@ namespace gazebo{
 			// having one joint that is the rotational joint.
 			this->joints_vector = _model->GetJoints();
 
+      // this->jController = this->model->GetJointController();
+      // this->jController.reset(new physics::JointController(this->model));
+
 			for (int i = 0; i < this->n_joints; ++i){
 				std::cerr << this->joints_vector[i]->GetScopedName();
 				std::cerr << "\n";
 				// Setup a P-controller, with a gain of 0.1.
-				this->pid_vector.push_back(common::PID(0.1, 0, 0));
+				this->pid_vector.push_back(common::PID(this->kp, 0, 0));
 				// Apply the P-controller to the joint.
 				this->model->GetJointController()->SetVelocityPID(this->joints_vector[i]->GetScopedName(), this->pid_vector.back());
 			}
@@ -113,6 +121,7 @@ namespace gazebo{
 			// Set the joint's target velocity.
 			this->model->GetJointController()->SetVelocityTarget(
 					this->joints_vector[joint_ID]->GetScopedName(), _vel);
+
 		}
 
 		/// \brief Handle an incoming message from ROS
@@ -129,6 +138,10 @@ namespace gazebo{
 				this->rosQueue.callAvailable(ros::WallDuration(timeout));
 			}
 		}
+
+    public: void OnUpdate(const common::UpdateInfo & /*_info*/) {
+        this->model->GetJointController()->Update();
+    }
 
 		/// \brief Pointer to the model.
 		private: physics::ModelPtr model;
@@ -152,6 +165,13 @@ namespace gazebo{
 
 		/// \brief A thread the keeps running the rosQueue
 		private: std::thread rosQueueThread;
+
+    private: std::unique_ptr<physics::JointController> jController;
+
+    // events
+    private: event::ConnectionPtr updateConnection;
+
+    private: double kp;
 	};
 
 	// Tell Gazebo about this plugin, so that Gazebo can call Load on this plugin.

@@ -23,10 +23,16 @@
       <uri>model://Field_bowl</uri>
     </include>
 
-    <include>
-      <uri>model://VT_simplificado</uri>
-      <pose>0 0 4.941 0 0 0</pose>
-    </include>
+    <model name="VT">
+      <include>
+        <uri>model://VT_simplificado</uri>
+        <pose>0 0 4.941 0 0 0</pose>
+      </include>
+
+      <plugin name="vt_sim plugin" filename="libvt_sim_plugin.so">
+        <pid_kp>5</pid_kp>
+      </plugin>
+    </model>
 
   </world>
 </sdf>

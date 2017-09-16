@@ -4,9 +4,9 @@
 
   # CORES
   # pneu
-  pneu_r = 0
-  pneu_g = 0
-  pneu_b = 0
+  pneu_r = 1
+  pneu_g = 1
+  pneu_b = 1
 
   # chassi
   chassi_r = 0.95
@@ -14,10 +14,10 @@
   chassi_b = 0.1
 
   # SUPERFICIE
-  mu = 1000
+  mu = 50
 
   # JUNTAS
-  friction = 500
+  friction = 0
 
 %>
 
@@ -563,7 +563,7 @@
       <child>roda_BR_link</child>
       <pose frame=''>0 0 0 0 -0 0</pose>
       <axis>
-        <xyz>0 0 -1</xyz>
+        <xyz>0 0 1</xyz>
         <use_parent_model_frame>0</use_parent_model_frame>
         <limit>
           <lower>-1.79769e+308</lower>
@@ -629,7 +629,7 @@
       <child>roda_FR_link</child>
       <pose frame=''>0 0 0 0 -0 0</pose>
       <axis>
-        <xyz>0 0 -1</xyz>
+        <xyz>0 0 1</xyz>
         <use_parent_model_frame>0</use_parent_model_frame>
         <limit>
           <lower>-1.79769e+308</lower>

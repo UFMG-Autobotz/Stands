@@ -30,6 +30,7 @@
       </include>
 
       <plugin name="vt_sim plugin" filename="libvt_sim_plugin.so">
+        <pid_kp>5</pid_kp>
       </plugin>
     </model>
 
