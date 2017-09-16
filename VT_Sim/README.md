@@ -32,7 +32,7 @@ No menu superior, clicar em Controller e em Nova Aba
 ## 5. Enviar comandos:
 Ajustar os valores de velocidade das rodas esquerdas e direitas e clicar em Publish para publicar.
 Observaçoes:
-* Quando Once esta marcado o valor selecionado é enviado uma vez, quando Stream está marcado o valor é reenviado a cada modificação.
+* Quando Once esta marcado o valor selecionado é enviado uma vez, quando Stream está marcado o valor é reenviado a cada modificação. Independentemente da opção escolhida, é  necessário clicar em Publish para iniciar o envio. Para parar o envio caso o inicie em Stream, basta clicar na opção Once.
 * Lembrar que a simumaçao inicia pausada, é preciso dar play.
 * Atualmente a GUI envia valores de velocidade entre -10 e 10 rad/s, esses valores sao razoaveis para o que queremos mostrar, mas é possivel modificar em Modules/Plugin_GUI/topics_vt.yaml
 
