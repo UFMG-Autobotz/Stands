@@ -20,7 +20,7 @@ ou
 bash run_field.sh
 ```
 
-## 3. Abrir interface grafica:
+## 3. Abrir interface gráfica:
 Em Modules/Plugin_GUI
 ```
 python main.py
@@ -33,8 +33,8 @@ No menu superior, clicar em Controller e em Nova Aba
 Ajustar os valores de velocidade das rodas esquerdas e direitas e clicar em Publish para publicar.
 Observaçoes:
 * Quando Once esta marcado o valor selecionado é enviado uma vez, quando Stream está marcado o valor é reenviado a cada modificação. Independentemente da opção escolhida, é  necessário clicar em Publish para iniciar o envio. Para parar o envio caso o inicie em Stream, basta clicar na opção Once.
-* Lembrar que a simumaçao inicia pausada, é preciso dar play.
-* Atualmente a GUI envia valores de velocidade entre -10 e 10 rad/s, esses valores sao razoaveis para o que queremos mostrar, mas é possivel modificar em Modules/Plugin_GUI/topics_vt.yaml
+* Lembrar que a simulação inicia pausada, é preciso dar play.
+* Atualmente a GUI envia valores de velocidade entre -10 e 10 rad/s, esses valores sao razoáveis para o que queremos mostrar, mas é possivel modificar em Modules/Plugin_GUI/topics_vt.yaml
 
 # Comportamento
 * Velocidades iguais e positivas: andar para a frente
