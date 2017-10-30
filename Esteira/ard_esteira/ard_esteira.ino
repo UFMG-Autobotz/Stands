@@ -75,7 +75,8 @@ void loop()
 
   Serial.print(vel_esq);
   Serial.print(",");
-  Serial.println(vel_dir);
+  Serial.print(vel_dir);
+  Serial.print("   -----   ");
   
   delay(5);
 }
@@ -90,7 +91,8 @@ void obter_xy()
   //Serial.println("Recebendo dados...");
   RecebeDados(dados);
   //Serial.print("recebido: ");
-  Serial.println(dados);  
+  Serial.print(dados);
+  Serial.print("   -----   ");  
   delay(50);
   
   pch = strtok (dados,",");
@@ -98,16 +100,16 @@ void obter_xy()
   pch = strtok (NULL, ",");
   y = atoi(pch);
   
-  if(x < 300)
+  if(x < 50)
     x = -1;
-  else if(x > 700)
+  else if(x > 800)
     x = 1;
   else
     x = 0;
 
-  if(y < 300)
+  if(y < 50)
     y = -1;
-  else if(y > 700)
+  else if(y > 900)
     y = 1;
   else
     y = 0;

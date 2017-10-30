@@ -40,17 +40,17 @@ void loop(){
   
   while(Mirf.isSending()){}
   
-  //Serial.println("Finished sending");
+  Serial.println("Finished sending");
   
   while(!Mirf.dataReady()){
-    //Serial.println("Waiting");
+    Serial.println("Waiting");
     if ( ( millis() - time ) > 500 ) {
       Serial.println("Timeout on response from server!");
       return;
     }
   }
-  //Serial.print("Ping: ");
-  //Serial.println((millis() - time));
+  Serial.print("Ping: ");
+  Serial.println((millis() - time));
 } 
   
   
