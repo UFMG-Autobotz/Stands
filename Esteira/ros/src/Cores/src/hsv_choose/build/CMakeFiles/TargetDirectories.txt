@@ -1,0 +1,3 @@
+/home/rodrigo/Dropbox/Autobotz/esteira_bolinhas/hsv_choose/build/CMakeFiles/edit_cache.dir
+/home/rodrigo/Dropbox/Autobotz/esteira_bolinhas/hsv_choose/build/CMakeFiles/rebuild_cache.dir
+/home/rodrigo/Dropbox/Autobotz/esteira_bolinhas/hsv_choose/build/CMakeFiles/Autobotz_main.dir

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rodrigo/Dropbox/Autobotz/esteira_bolinhas/hsv_choose/hsv_choose.cpp
+iostream
+-
+opencv2/opencv.hpp
+-
+stdio.h
+-
+stdlib.h
+-
+
